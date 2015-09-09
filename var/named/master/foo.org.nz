@@ -1,0 +1,19 @@
+$TTL 1h
+foo.org.nz. IN SOA ns1.foo.org.nz. tech.somedomain.net (
+20150819
+3h
+1h
+3d
+1h )
+
+foo.org.nz. IN NS ns1.foo.org.nz.
+foo.org.nz. IN NS ns2.foo.org.nz.
+
+bsdserver.foo.org.nz. IN A 172.16.5.13
+bsdrelay.foo.org.nz. IN A 192.168.2.100
+
+
+ns1.foo.org.nz. IN CNAME bsdserver.foo.org.nz.
+ns1.foo.org.nz. IN CNAME www.
+
+foo.org.nz. IN MX 0 ns1.foo.org.nz.
